@@ -1,9 +1,9 @@
-nav {
+nav.faecher {
 	border: 1px solid rgb(181, 181, 239);
 	background-color: rgb(181, 181, 239);
 	font-size: 150%;
 }
-nav > ul {
+nav.faecher > ul {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -11,16 +11,16 @@ nav > ul {
 	list-style: none;
 	padding: 0;
 }
-nav > ul > li > a:visited, nav > ul > li > a:link {
+nav.faecher > ul > li > a:visited, nav.faecher > ul > li > a:link {
 	color: rgb(49, 110, 167);
 	text-decoration: none;
 }
-nav > ul > li > a:hover {
+nav.faecher > ul > li > a:hover {
 	color: rgb(227, 89, 89);
 	text-decoration: underline;
 }
-nav > ul > li a.index {
-	background-color: rgb(113, 78, 255);
+nav.faecher > ul > li a.index {
+	background-color: rgb(155, 148, 221);
 	padding: 25px 15px;
 }
 h1 {
@@ -28,14 +28,16 @@ h1 {
 	font-size: 250%;
 	color: rgb(79, 134, 186);
 	border: 3px solid rgb(181, 181, 239);
+	padding: 10px;
 }
 table > caption {
 	text-align: center;
-	color:rgb(79, 134, 186);
+	color:rgb(161, 25, 52);
 	font-size: 200%;
 }
 table.stundenplan {
-	margin-top: 2rem;
+	margin-top: 1rem;
+	
 }
 table.stundenplan th {
 	border: 1px solid;
@@ -58,4 +60,12 @@ table.indefinidoUnregelmaessig, table.indefinido {
 }
 mark {
 	background-color: rgb(249, 170, 164);
+}
+nav.sidebar {
+	float:left;
+}
+nav.sidebar > ul {
+	list-style: none;
+	border: solid 1px;
+	padding: 15px;
 }
