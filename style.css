@@ -1,0 +1,61 @@
+nav {
+	border: 1px solid rgb(181, 181, 239);
+	background-color: rgb(181, 181, 239);
+	font-size: 150%;
+}
+nav > ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+}
+nav > ul > li > a:visited, nav > ul > li > a:link {
+	color: rgb(49, 110, 167);
+	text-decoration: none;
+}
+nav > ul > li > a:hover {
+	color: rgb(227, 89, 89);
+	text-decoration: underline;
+}
+nav > ul > li a.index {
+	background-color: rgb(113, 78, 255);
+	padding: 25px 15px;
+}
+h1 {
+	text-align: center;
+	font-size: 250%;
+	color: rgb(79, 134, 186);
+	border: 3px solid rgb(181, 181, 239);
+}
+table > caption {
+	text-align: center;
+	color:rgb(79, 134, 186);
+	font-size: 200%;
+}
+table.stundenplan {
+	margin-top: 2rem;
+}
+table.stundenplan th {
+	border: 1px solid;
+	background-color: rgb(218, 74, 103);
+	color: white;
+	padding: 5px;
+	text-align: left;
+}
+table.stundenplan td, table.indefinidoUnregelmaessig td, table.indefinido td{
+	border: 1px solid;
+	padding: 5px;
+}
+table.indefinidoUnregelmaessig th, table.indefinido th {
+	border: 1px solid;
+	padding: 5px;
+	background-color: rgb(154, 185, 213);
+}
+table.indefinidoUnregelmaessig, table.indefinido {
+	border: 1px solid;
+}
+mark {
+	background-color: rgb(249, 170, 164);
+}
