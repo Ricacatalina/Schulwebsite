@@ -28,9 +28,9 @@ nav.sidebar {
 	font-size: 130%;
 }
 nav.sidebar > ul {
-	list-style: none;
-	border: solid 1px;
-	padding: 30px 40px;
+	border: solid 3px rgb(181, 181, 239);
+	padding: 40px 40px;
+	list-style: circle;
 }
 h1 {
 	text-align: center;
@@ -39,7 +39,11 @@ h1 {
 	border: 3px solid rgb(181, 181, 239);
 	padding: 10px;
 }
-table > caption {
+h2 {
+	text-align: center;
+	color: rgb(79, 134, 186);
+}
+table.stundenplan > caption {
 	text-align: center;
 	color:rgb(161, 25, 52);
 	font-size: 200%;
@@ -55,18 +59,32 @@ table.stundenplan th {
 	padding: 5px;
 	text-align: left;
 }
-table.stundenplan td, table.indefinidoUnregelmaessig td, table.indefinido td{
+table td {
 	border: 1px solid;
 	padding: 5px;
 }
-table.indefinidoUnregelmaessig th, table.indefinido th {
+table.indefinidoUnregelmaessig th, table.indefinido th, table.arbeiten91 th, table.arbeiten92 th {
 	border: 1px solid;
 	padding: 5px;
 	background-color: rgb(154, 185, 213);
 }
-table.indefinidoUnregelmaessig, table.indefinido {
+table.indefinidoUnregelmaessig, table.indefinido, table.arbeiten91, table.arbeiten92 {
 	border: 1px solid;
 }
 mark {
 	background-color: rgb(249, 170, 164);
+}
+table.arbeiten91 {
+	width:45%;
+	float: left;
+	margin-right: 5rem;
+}
+table.arbeiten92 {
+	width: 45%;
+}
+table.arbeiten91 td, table.arbeiten92 td {
+	text-align: center;
+}
+table.arbeiten91 td:hover, table.arbeiten92 td:hover {
+	background-color: rgb(182, 214, 241);
 }
