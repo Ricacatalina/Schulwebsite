@@ -19,13 +19,26 @@ nav.faecher > ul > li > a:hover, nav.sidebar > ul > li > a:hover {
 	color: rgb(227, 89, 89);
 	text-decoration: underline;
 }
-nav.faecher > ul > li a.index {
-	background-color: rgb(155, 148, 221);
-	padding: 25px 15px;
+@media (min-width: 800px) {
+	nav.faecher > ul > li > a.index {
+		background-color: rgb(155, 148, 221);
+		padding: 25px 15px;
+	}
 }
-nav.sidebar {
-	float:left;
-	font-size: 130%;
+@media (max-width: 500px) {
+	nav.faecher > ul > li > a.index {
+		background-color: rgb(155, 148, 221);
+		padding: 20px 5px 15px;
+	}
+}
+nav.faecher > ul > li > a.index:hover {
+	color:rgb(15, 128, 19);
+}
+@media (min-width: 800px) {
+	nav.sidebar {
+		float: left;
+		font-size: 130%;
+	}
 }
 nav.sidebar > ul {
 	border: solid 3px rgb(181, 181, 239);
@@ -38,6 +51,7 @@ h1 {
 	color: rgb(79, 134, 186);
 	border: 3px solid rgb(181, 181, 239);
 	padding: 10px;
+	word-wrap: break-word;
 }
 h2 {
 	text-align: center;
@@ -59,6 +73,9 @@ table.stundenplan th {
 	padding: 5px;
 	text-align: left;
 }
+main > section.table {
+	overflow-x: auto;
+}
 table td {
 	border: 1px solid;
 	padding: 5px;
@@ -74,17 +91,21 @@ table.indefinidoUnregelmaessig, table.indefinido, table.arbeiten91, table.arbeit
 mark {
 	background-color: rgb(249, 170, 164);
 }
-table.arbeiten91 {
-	width:45%;
-	float: left;
-	margin-right: 5rem;
+section.arbeiten {
+	display: flex;
+	gap: 2rem;
 }
-table.arbeiten92 {
-	width: 45%;
+@media (max-width: 800px) {
+	section.arbeiten {
+		flex-direction: column;
+	}
 }
-table.arbeiten91 td, table.arbeiten92 td {
+section.arbeiten table {
+	width: 100%;
+}
+section.arbeiten table td {
 	text-align: center;
 }
-table.arbeiten91 td:hover, table.arbeiten92 td:hover {
+section.arbeiten table td:hover {
 	background-color: rgb(182, 214, 241);
 }
