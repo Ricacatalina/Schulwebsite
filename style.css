@@ -91,12 +91,12 @@ table.indefinidoUnregelmaessig, table.indefinido, table.arbeiten91, table.arbeit
 mark {
 	background-color: rgb(249, 170, 164);
 }
-section.arbeiten {
+section.arbeiten, section.debattieren {
 	display: flex;
 	gap: 2rem;
 }
 @media (max-width: 800px) {
-	section.arbeiten {
+	section.arbeiten, section.debattieren {
 		flex-direction: column;
 	}
 }
@@ -109,10 +109,7 @@ section.arbeiten table td {
 section.arbeiten table td:hover {
 	background-color: rgb(182, 214, 241);
 }
-section.debattierenablauf, section.debattierthemen {
+section.debattieren section {
 	border: 1px solid;
-	width: 50%;
-}
-section.debattierenablauf {
-	margin-bottom: 1rem;
+	width: 100%;
 }
