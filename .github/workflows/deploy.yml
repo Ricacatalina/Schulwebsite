@@ -10,9 +10,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-    - name: mask key
-      run: echo "::add-mask::${{ secrets.SITEUPDATE_KEY }}"
     - name: update
-      uses: wei/curl@v1
-      with:
-        args: https://l3p3.de/svr/site-update.txt?site=rica_schule&key=${{ secrets.SITEUPDATE_KEY }}
+      run: |
+        echo "::add-mask::${{ secrets.SITEUPDATE_KEY }}"
+        curl -X POST -d "site=politiker_kaufen&key=${{ secrets.SITEUPDATE_KEY }}" https://l3p3.de/svr/site-update.txt
