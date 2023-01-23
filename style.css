@@ -91,19 +91,19 @@ table.indefinidoUnregelmaessig, table.indefinido, table.arbeiten91, table.arbeit
 mark {
 	background-color: rgb(249, 170, 164);
 }
-section.arbeiten, section.debattieren {
+section.arbeiten, section.debattieren, section.vokabeln {
 	display: flex;
 	gap: 2rem;
 }
 @media (max-width: 800px) {
-	section.arbeiten, section.debattieren {
+	section.arbeiten, section.debattieren, section.vokabeln {
 		flex-direction: column;
 	}
 }
-section.arbeiten table {
+section.arbeiten table, section.vokabeln table {
 	width: 100%;
 }
-section.arbeiten table td {
+section.arbeiten table td, section.vokabeln table td {
 	text-align: center;
 }
 section.arbeiten table td:hover {
@@ -112,4 +112,8 @@ section.arbeiten table td:hover {
 section.debattieren div {
 	border: 1px solid;
 	width: 100%;
+}
+section.vokabeln table {
+	border-collapse: collapse;
+	border: 1px;
 }
