@@ -13,4 +13,4 @@ jobs:
     - name: update
       run: |
         echo "::add-mask::${{ secrets.SITEUPDATE_KEY }}"
-        curl -X POST -d "site=politiker_kaufen&key=${{ secrets.SITEUPDATE_KEY }}" https://l3p3.de/svr/site-update.txt
+        curl -X POST -d "site=rica_schule&key=${{ secrets.SITEUPDATE_KEY }}" https://l3p3.de/svr/site-update.txt
