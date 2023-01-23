@@ -19,22 +19,22 @@ nav.faecher > ul > li > a:hover, nav.sidebar > ul > li > a:hover {
 	color: rgb(227, 89, 89);
 	text-decoration: underline;
 }
-@media (min-width: 800px) {
-	nav.faecher > ul > li > a.index {
+@media (min-width: 1100px) {
+	nav.faecher > ul > li > a.active {
 		background-color: rgb(155, 148, 221);
-		padding: 25px 15px;
+		padding: 25px 5px;
 	}
 }
-@media (max-width: 500px) {
-	nav.faecher > ul > li > a.index {
+@media (max-width: 1100px) {
+	nav.faecher > ul > li > a.active {
 		background-color: rgb(155, 148, 221);
-		padding: 20px 5px 15px;
+		padding: 15px 5px;
 	}
 }
 nav.faecher > ul > li > a.index:hover {
 	color:rgb(15, 128, 19);
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
 	nav.sidebar {
 		float: left;
 		font-size: 130%;
