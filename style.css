@@ -109,7 +109,7 @@ section.arbeiten table td {
 section.arbeiten table td:hover {
 	background-color: rgb(182, 214, 241);
 }
-section.debattieren section {
+section.debattieren div {
 	border: 1px solid;
 	width: 100%;
 }
