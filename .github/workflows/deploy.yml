@@ -1,0 +1,16 @@
+name: Deploy changes
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: update
+      uses: wei/curl@v1
+      with:
+        args: https://l3p3.de/svr/site-update.txt?site=rica_schule
