@@ -11,13 +11,20 @@ nav.faecher > ul {
 	list-style: none;
 	padding: 0;
 }
-nav.faecher > ul > li > a:visited, nav.faecher > ul > li > a:link, nav.sidebar > ul >li >a:visited, nav.sidebar > ul > li > a:link {
+nav.faecher > ul > li > a:visited, nav.faecher > ul > li > a:link, nav.sidebar > ul >li > a:visited, nav.sidebar > ul > li > a:link {
 	color: rgb(49, 110, 167);
 	text-decoration: none;
 }
 nav.faecher > ul > li > a:hover, nav.sidebar > ul > li > a:hover {
 	color: rgb(227, 89, 89);
 	text-decoration: underline;
+}
+nav.faecher > ul > li > a.active:hover {
+	color: rgb(49, 110, 167);
+	text-decoration: none;
+}
+nav.faecher > ul > li > a.active {
+	color: rgb(49, 110, 167);
 }
 @media (min-width: 1100px) {
 	nav.faecher > ul > li > a.active {
@@ -33,6 +40,7 @@ nav.faecher > ul > li > a:hover, nav.sidebar > ul > li > a:hover {
 }
 nav.faecher > ul > li > a.index:hover {
 	color:rgb(15, 128, 19);
+	text-decoration: underline;
 }
 @media (min-width: 1000px) {
 	nav.sidebar {
