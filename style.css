@@ -57,6 +57,9 @@ h2 {
 	text-align: center;
 	color: rgb(79, 134, 186);
 }
+h3 {
+	font-size: 130%;
+}
 table.stundenplan > caption {
 	text-align: center;
 	color:rgb(161, 25, 52);
@@ -106,7 +109,7 @@ section.arbeiten table, section.vokabeln table {
 section.arbeiten table td, section.vokabeln table td {
 	text-align: center;
 }
-section.arbeiten table td:hover {
+section.arbeiten table td:hover, section.vokabeln table tr:hover {
 	background-color: rgb(182, 214, 241);
 }
 section.debattieren div {
@@ -116,4 +119,19 @@ section.debattieren div {
 section.vokabeln table {
 	border-collapse: collapse;
 	border: 1px;
+	text-align: left;
+}
+section.vokabeln > table  {
+	height: 10px;
+	margin-bottom: 1rem;
+}
+section.vokabeln > table caption {
+	text-align: left;
+	margin-bottom: 1rem;
+	font-size: 130%;
+	color: rgb(73, 73, 150);
+}
+section.vokabeln > table td {
+	text-align: left;
+	width: 50%
 }
