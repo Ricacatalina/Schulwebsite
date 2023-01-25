@@ -83,18 +83,26 @@ table td {
 	border: 1px solid;
 	padding: 5px;
 }
-table.indefinidoUnregelmaessig th, table.indefinido th, table.arbeiten91 th, table.arbeiten92 th {
+table.indefinidoUnregelmaessig th,
+table.indefinido th,
+table.arbeiten91 th,
+table.arbeiten92 th {
 	border: 1px solid;
 	padding: 5px;
 	background-color: rgb(154, 185, 213);
 }
-table.indefinidoUnregelmaessig, table.indefinido, table.arbeiten91, table.arbeiten92 {
+table.indefinidoUnregelmaessig, 
+table.indefinido,
+table.arbeiten91,
+table.arbeiten92 {
 	border: 1px solid;
 }
 mark {
 	background-color: rgb(249, 170, 164);
 }
-section.arbeiten, section.debattieren, section.vokabeln {
+section.arbeiten,
+section.debattieren,
+section.vokabeln {
 	display: flex;
 	gap: 2rem;
 }
@@ -103,20 +111,26 @@ section.arbeiten, section.debattieren, section.vokabeln {
 		flex-direction: column;
 	}
 }
-section.arbeiten table, section.vokabeln table, table.irregular {
+section.arbeiten table,
+section.vokabeln table,
+table.irregular {
 	width: 100%;
 }
 section.arbeiten table td, section.vokabeln table td {
 	text-align: center;
 }
-section.arbeiten table td:hover, section.vokabeln table tr:hover, table.irregular tr:hover {
+section.arbeiten table td:hover,
+section.vokabeln table tr:hover,
+table.irregular tr:hover,
+table.glossar tr:hover {
 	background-color: rgb(182, 214, 241);
 }
 section.debattieren div {
 	border: 1px solid;
 	width: 100%;
 }
-section.vokabeln table, table.irregular {
+section.vokabeln table,
+table.irregular, table.glossar {
 	border-collapse: collapse;
 	border: 1px;
 	text-align: left;
