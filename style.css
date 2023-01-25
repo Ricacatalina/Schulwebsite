@@ -7,40 +7,9 @@ nav.faecher > ul {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 1rem;
 	list-style: none;
 	padding: 0;
-}
-nav.faecher > ul > li > a:visited, nav.faecher > ul > li > a:link, nav.sidebar > ul >li > a:visited, nav.sidebar > ul > li > a:link {
-	color: rgb(49, 110, 167);
-	text-decoration: none;
-}
-nav.faecher > ul > li > a:hover, nav.sidebar > ul > li > a:hover {
-	color: rgb(227, 89, 89);
-	text-decoration: underline;
-}
-nav.faecher > ul > li > a.active:hover {
-	color: rgb(49, 110, 167);
-	text-decoration: none;
-}
-nav.faecher > ul > li > a.active {
-	color: rgb(49, 110, 167);
-}
-@media (min-width: 1100px) {
-	nav.faecher > ul > li > a.active {
-		background-color: rgb(155, 148, 221);
-		padding: 25px 5px;
-	}
-}
-@media (max-width: 1100px) {
-	nav.faecher > ul > li > a.active {
-		background-color: rgb(155, 148, 221);
-		padding: 15px 5px;
-	}
-}
-nav.faecher > ul > li > a.index:hover {
-	color:rgb(15, 128, 19);
-	text-decoration: underline;
+	margin: 0;
 }
 @media (min-width: 1000px) {
 	nav.sidebar {
@@ -53,6 +22,30 @@ nav.sidebar > ul {
 	padding: 40px 40px;
 	list-style: circle;
 }
+nav.faecher > ul > li {
+	padding: 1rem .5rem;
+}
+nav.faecher > ul > li > a:visited,
+nav.faecher > ul > li > a:link,
+nav.sidebar > ul > li > a:visited,
+nav.sidebar > ul > li > a:link {
+	color: rgb(49, 110, 167);
+	text-decoration: none;
+}
+nav.faecher > ul > li > a:hover,
+nav.sidebar > ul > li > a:hover {
+	color: rgb(227, 89, 89);
+	text-decoration: underline;
+}
+nav.faecher > ul > li > a.index:hover {
+	color: rgb(15, 128, 19);
+	text-decoration: underline;
+}
+nav.faecher > ul > li.active {
+	color: rgb(49, 110, 167);
+	background-color: rgb(155, 148, 221);
+}
+
 h1 {
 	text-align: center;
 	font-size: 250%;
@@ -75,7 +68,6 @@ table.stundenplan > caption {
 }
 table.stundenplan {
 	margin-top: 1rem;
-	
 }
 table.stundenplan th {
 	border: 1px solid;
@@ -111,20 +103,20 @@ section.arbeiten, section.debattieren, section.vokabeln {
 		flex-direction: column;
 	}
 }
-section.arbeiten table, section.vokabeln table {
+section.arbeiten table, section.vokabeln table, table.irregular {
 	width: 100%;
 }
 section.arbeiten table td, section.vokabeln table td {
 	text-align: center;
 }
-section.arbeiten table td:hover, section.vokabeln table tr:hover {
+section.arbeiten table td:hover, section.vokabeln table tr:hover, table.irregular tr:hover {
 	background-color: rgb(182, 214, 241);
 }
 section.debattieren div {
 	border: 1px solid;
 	width: 100%;
 }
-section.vokabeln table {
+section.vokabeln table, table.irregular {
 	border-collapse: collapse;
 	border: 1px;
 	text-align: left;
@@ -142,4 +134,11 @@ section.vokabeln > table caption {
 section.vokabeln > table td {
 	text-align: left;
 	width: 50%
+}
+table.irregular td {
+	width: 25%;
+}
+table.irregular th {
+	background-color: rgb(62, 117, 85);
+	color: white;
 }
