@@ -57,24 +57,27 @@ h2 {
 h3 {
 	font-size: 130%;
 }
-table.stundenplan > caption {
+table#stundenplan > caption {
 	text-align: center;
 	color:rgb(161, 25, 52);
 	font-size: 200%;
 }
-table.stundenplan {
+table#stundenplan {
 	margin-top: 1rem;
 }
-table.stundenplan th {
+table#stundenplan th {
 	background-color: rgb(218, 74, 103);
 	color: white;
 	text-align: left;
+}
+table#stundenplan tr.current {
+	background-color: rgb(218, 74, 103);
 }
 main > section.table {
 	overflow-x: auto;
 }
 table td,
-table.stundenplan th {
+table#stundenplan th {
 	border: 1px solid;
 	padding: 5px;
 }
@@ -147,7 +150,8 @@ section.vokabeln > table td {
 table.irregular td {
 	width: 25%;
 }
-table.irregular th {
-	background-color: rgb(62, 117, 85);
+table.irregular th,
+table.glossar th {
+	background-color: rgb(57, 124, 85);
 	color: white;
 }
